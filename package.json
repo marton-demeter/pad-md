@@ -11,5 +11,13 @@
     "padding"
   ],
   "author": "Marton Demeter <marton1029@gmail.com>",
-  "license": "GPL-3.0"
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marton-demeter/pad-md.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marton-demeter/pad-md/issues"
+  },
+  "homepage": "https://github.com/marton-demeter/pad-md#readme"
 }
