@@ -33,8 +33,10 @@ Pad.prototype.mid = function(t, nl, nr = null, fe = null) {
   if(nl&&t&&nr&&!fe) return(`${this.fl.repeat(this.setm(t,nl))}${t}${this.fr.repeat(this.setm(t,nr))}`);
   if(nl&&t&&nr&&fe) return(`${fe}${this.fl.repeat(this.setm(t,nl)-1)}${t}${this.fr.repeat(this.setm(t,nr)-1)}${fe}`);
 };
-Pad.prototype.tl = function(f){ this.fl = f};
-Pad.prototype.tr = function(f){ this.fr = f};
+Pad.prototype.tl = function(f){ this.fl = f };
+Pad.prototype.tr = function(f){ this.fr = f };
+Pad.prototype.fill = function(f){ this.fl = f; this.fr = f; }
+Pad.prototype.reset = function(){ this.fl = ' '; this.fr = ' '; }
 
 const pad = new Pad();
 
