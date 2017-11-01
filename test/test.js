@@ -31,8 +31,7 @@ var result = pad.right('text', 5) // "text "
 console.log(result);
 
 // set default (persistent) left and right fill
-var result = pad.fill('+');
-console.log(result);
+pad.fill('+');
 
 var result = pad.mid('text', 5)    // "+++text+++"
 console.log(result);
