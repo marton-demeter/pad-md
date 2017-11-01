@@ -38,8 +38,7 @@ console.log(result);
 var result = pad.mid('text', 5, 3) // "+++text+"
 console.log(result);
 
-var result = pad.reset();
-console.log(result);
+pad.reset();
 
 // set the edge fill
 var result = pad.mid('text', 5, 5, '#'); // "#  text  #"
