@@ -1,6 +1,6 @@
 {
   "name": "pad-md",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A NodeJS module for string padding.",
   "main": "pad-md.js",
   "scripts": {

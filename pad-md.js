@@ -4,6 +4,7 @@ Pad = function(options) {
   this.fr = options.fr || ' ';
 }
 Pad.prototype.setr = function(t, n) {
+  t=t.toString();
   if(t.trim().length>=n) return 0;
   else return n-t.trim().length;
 }
@@ -21,14 +22,17 @@ Pad.prototype.pad = function(arg1, arg2, arg3 = null) {
   }
 }
 Pad.prototype.left = function(t, nl, tl = null) {
+  t=t.toString();
   if(nl&&t&&!tl) return(`${this.fl.repeat(this.setr(t,nl))}${t}`);
   if(nl&&t&&tl) return(`${tl.repeat(this.setr(t,nl))}${t}`);
 };
 Pad.prototype.right = function(t, nr, tr = null) {
+  t=t.toString();
   if(nr&&t&&!tr) return(`${t}${this.fr.repeat(this.setr(t,nr))}`);
   if(nr&&t&&tr) return(`${t}${tr.repeat(this.setr(t,nr))}`);
 };
 Pad.prototype.mid = function(t, nl, nr = null, fe = null) {
+  t=t.toString();
   if(nl&&t&&!nr) return(`${this.fl.repeat(this.setm(t,nl))}${t}${this.fr.repeat(this.setm(t,nl))}`);
   if(nl&&t&&nr&&!fe) return(`${this.fl.repeat(this.setm(t,nl))}${t}${this.fr.repeat(this.setm(t,nr))}`);
   if(nl&&t&&nr&&fe) return(`${fe}${this.fl.repeat(this.setm(t,nl)-1)}${t}${this.fr.repeat(this.setm(t,nr)-1)}${fe}`);
