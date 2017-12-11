@@ -1,4 +1,4 @@
-Pad = (options) => {
+Pad = function(options) {
   options = options || {};
   this.fl = options.fl || ' ';
   this.fr = options.fr || ' ';
